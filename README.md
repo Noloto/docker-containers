@@ -17,6 +17,13 @@ docker-compose up -d
 ## Environment
 
 
+| Database         | Username         | Password         |
+|:---------------- |:---------------- |:---------------- |
+| MongoDB          | development      | development      |
+| MariaDB          | maria            | maria            |
+
+MariaDB coming soonish!
+
 
 
 
