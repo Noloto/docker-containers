@@ -2,7 +2,7 @@
 
 ## Usage
 
-To run a container on your local machine - within your Terminal navigate to the folder of the specific database-provider/version and run:
+To run a container on your local machine - within your Terminal navigate to the folder of the specific _database-provider/version_ and run:
 
 ```
 docker-compose up -d
