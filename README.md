@@ -1,4 +1,4 @@
-# Datbase Containers - Docker Compose
+# WIP: Datbase Containers - Docker Compose
 
 ## Usage
 
@@ -14,9 +14,6 @@ docker-compose up -d
 | Database         | Username         | Password         |
 |:---------------- |:---------------- |:---------------- |
 | MongoDB          | development      | development      |
-| MariaDB          | maria            | maria            |
-
-MariaDB coming soonish!
 
 
 
