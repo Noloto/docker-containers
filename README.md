@@ -1,4 +1,6 @@
-# WIP: Useful Docker Containers
+# Docker Containers
+
+Id suggest using those containers for development and quick testing purposes only. They may not be production ready in any way, shape or form.
 
 ## Usage
 
