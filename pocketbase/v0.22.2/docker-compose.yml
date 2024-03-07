@@ -1,0 +1,16 @@
+version: '3.9'
+name: pocketbase
+
+services:
+  pocketbase:
+    container_name: db
+    build: .
+    image: pocketbase:latest
+    volumes:
+      - pocketbase-volume:/app/data
+    ports:
+      - '8080:8080'
+
+volumes:
+  pocketbase-volume:
+    name: pocketbase-volume

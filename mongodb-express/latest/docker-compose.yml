@@ -1,16 +1,24 @@
 version: '3.9'
+name: 'mongodb-express'
+
 services:
-  mongo:
+  mongodb:
     container_name: mongodb
     image: mongo:latest
     env_file:
       - mongodb.env
     ports:
       - 27017:27017
+    volumes:
+      - mongodb-volume:/app/data
 
   mongo-express:
     container_name: mongo-express
     image: mongo-express:latest
-    ports: 
+    ports:
       - 8081:8081
     env_file: mongo-express.env
+
+volumes:
+  mongodb-volume:
+    name: mongodb-volume

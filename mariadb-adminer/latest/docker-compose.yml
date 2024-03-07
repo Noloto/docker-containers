@@ -1,0 +1,20 @@
+version: '3.9'
+name: mariadb-adminer
+
+services:
+  mariadb:
+    container_name: mariadb
+    image: mariadb:latest
+    env_file: mariadb.env
+    volumes:
+      - mariadb-volume:/app/data
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    ports:
+      - 8080:8080
+
+volumes:
+  mariadb-volume:
+    name: mariadb-volume
