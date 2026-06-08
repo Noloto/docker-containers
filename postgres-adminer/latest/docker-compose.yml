@@ -1,0 +1,22 @@
+name: "postgres-adminer"
+
+services:
+  db:
+    container_name: postgres
+    image: postgres:latest
+    env_file:
+      - postgres.env
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-volume:/app/data
+
+  adminer:
+    container_name: adminer
+    image: adminer:latest
+    ports:
+      - 8080:8080
+
+volumes:
+  postgres-volume:
+    name: postgres-volume
